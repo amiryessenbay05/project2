@@ -1,0 +1,189 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    background-color: #4a3d3d;
+}
+
+#search-form {
+    outline: none;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 35px;
+}
+
+#search-form input {
+    outline: none;
+    width: 30vw;
+    border-radius: 35px;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+}
+
+#search-button {
+    border-radius: 35px;
+    border: none;
+    height: 50px;
+    width: 120px;
+    background-image: linear-gradient(180deg, rgba(255,247,47,1), rgba(225, 170,40,1));
+    color: #341919;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.25);
+}
+
+#results {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.recipe-item {
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #333333;
+    background-color: #efebe9;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.35);
+}
+
+.recipe-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.recipe-item a {
+    color: maroon;
+}
+
+#recipe-details {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 60vw;
+    background-color: #333333;
+}
+
+#recipe-content {
+    padding: 20px;
+    height: 70vh;
+    overflow-y: auto;
+    text-align: center;
+}
+
+#recipe-content p, #recipe-content li {
+    text-align: left;
+}
+
+#recipe-content::-webkit-scrollbar {
+    width: 12px;
+}
+
+#recipe-content::-webkit-scrollbar-thumb {
+    background-color: #595454;
+    border-radius: 10px;
+}
+
+#recipe-content::-webkit-scrollbar-track {
+    background-color: #9b9999;
+    border-radius: 5px;
+}
+
+#recipe-content::-webkit-scrollbar-thumb:hover {
+    background-color: #6f6e6e;
+}
+#recipe-content p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+#recipe-content p strong {
+    font-weight: bold;
+}
+
+
+#statusBar {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: #545447;
+    height: 2vh;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#close-button {
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #333;
+}
+
+#suggestions {
+    position: absolute;
+    background-color: white;
+    max-height: 150px;
+    overflow-y: auto;
+    width: 30vw;
+    margin-top: 5px;
+    z-index: 10;
+   
+}
+
+
+#suggestions div {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#suggestions div:hover {
+    background-color: #f0f0f0;
+}
+
+
+input[type="text"]::-webkit-search-cancel-button {
+    display: none;
+}
+#favorites-section {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+#favorites-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+#favorites-list li {
+    padding: 8px;
+    background-color: #e9e9e9;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}

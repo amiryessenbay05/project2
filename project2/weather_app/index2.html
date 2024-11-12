@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather conditions</h1>
+        
+        <div class="search">
+            <input type="text" id="city" placeholder="City name" oninput="suggestCities()">
+            <div id="suggestions" class="suggestions"></div>
+            <button onclick="getWeather()">Search</button>
+        </div>
+        
+        <button onclick="getWeatherByLocation()">Weather by geo</button>
+
+        <div class="units">
+            <button onclick="setTemperatureUnit('metric')">°C</button>
+            <button onclick="setTemperatureUnit('imperial')">°F</button>
+        </div>
+
+        <div id="weather"></div>
+        <div id="loader" class="loader" style="display: none;"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
